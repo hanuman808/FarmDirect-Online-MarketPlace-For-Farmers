@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Details Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img
+                src="https://uxwing.com/wp-content/themes/uxwing/download/crime-security-military-law/evidence-icon.png" />
+            <h1>Case Notification</h1>
+        </div>
+        <div class="content">
+            <h2>Case Details</h2>
+            <p><strong>Case ID:</strong>
+                <%= caseData.caseId%>
+            </p>
+            <p><strong>Title:</strong>
+                <%= caseData.title%>
+            </p>
+            <p><strong>Description:</strong>
+                <%= caseData.description %>
+            </p>
+            <p><strong>Type:</strong>
+                <%= caseData.type%>
+            </p>
+            <p><strong>Status:</strong> <span class="highlight">
+                    <%= caseData.status %>
+                </span></p>
+            <p><strong>Priority:</strong> <span class="highlight">
+                    <%= caseData.priority %>
+                </span></p>
+
+            <h2>Police Station Details</h2>
+            <p><strong>Station Name:</strong>
+                <%=policeStation.stationName %>
+            </p>
+            <p><strong>Station Code:</strong>
+                <%=policeStation.stationCode %>
+            </p>
+            <p><strong>Contact Number:</strong>
+                <%=policeStation.contactNumber %>
+            </p>
+            <p><strong>Email:</strong>
+                <%=policeStation.email %>
+            </p>
+            <p><strong>Address:</strong>
+                <%=policeStation.address %>
+            </p>
+            <p><strong>City:</strong>
+                <%=policeStation.city %>
+            </p>
+            <p><strong>State:</strong>
+                <%=policeStation.state %>
+            </p>
+            <p><strong>In-Charge Name:</strong>
+                <%=policeStation.inChargeName %>
+            </p>
+            <h2>Report Details</h2>
+            <p>
+                <strong>Report</strong>
+                <%=report.report %>
+            </p>
+            <p>
+                <strong>Address</strong>
+                <%=report.address %>
+            </p>
+
+        </div>
+        <div class="footer">
+            <p>Made with ♥ by NovaCops</p>
+            <p>
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/crime-security-military-law/evidence-icon.png"
+                    alt="NovaCops" width="100" />
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
