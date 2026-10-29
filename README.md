@@ -82,24 +82,6 @@ python app.py
 
 ---
 
-## ⚙️ Environment Variables
-
-Create a `.env` file in the root directory:
-```env
-# Database
-MONGO_URI = mongodb://localhost:27017/agrifood-mern
-
-# Auth
-JWT_SECRET = your_jwt_secret
-
-# Default Admin
-ADMIN_EMAIL = admin@example.com
-ADMIN_PASSWORD = admin123
-
-# Razorpay (Optional)
-RAZORPAY_KEY_ID = your_key
-RAZORPAY_KEY_SECRET = your_secret
-```
 
 ---
 
